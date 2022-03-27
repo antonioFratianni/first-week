@@ -1,0 +1,16 @@
+Il programma non compila a causa di un errore nella firma del metodo della classe B;
+
+Commentato il metodo che induce all errore l output del codice e:
+
+    Hello Word
+    A1
+    A2
+    C2
+    10;
+
+Essendo utilizzato l overloading dei metodi ecco le firme dei metodi che vengono invocati ad ogni print:
+
+    System.out.println (beta.f (gamma, arr)); // A.String f (A x, A[]arr)
+    System.out.println (gamma.f (arr, alfa)); // A.String f (Object x, Object y)
+    System.out.println (gamma.f (beta, alfa)); // C.String f (B x, Object y)
+
